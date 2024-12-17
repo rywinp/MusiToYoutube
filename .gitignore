@@ -1,0 +1,9 @@
+env
+.env
+
+*token.pickle
+client_secret.json
+credentials_ss_ex
+playlistItemList.json
+chromedriver.exe
+examples/
