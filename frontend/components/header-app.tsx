@@ -8,7 +8,7 @@ const castoro = Castoro({
 export default function Header() {
     return (
         <div className={`flex justify-center ${castoro.className}`}>
-            <h1 className="text-4xl lg:text-7xl text-center m-7 text-customOrange text-shadow-black-border">Musi To YouTube Service</h1>
+            <h1 className="text-4xl lg:text-7xl text-center m-7 text-customOrange text-shadow-black-border-2">Musi To YouTube Service</h1>
         </div>
     );
 }

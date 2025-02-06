@@ -10,8 +10,10 @@ export default {
   theme: {
   	extend: {
 		textShadow: {
-			'black-border': '0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black',
+			'black-border-2': '0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black',
+			'black-border-1': '0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black',
 		  },
+		  
   		colors: {
 			"customOrange": "#FF8303",
 			"customOrangeLight": "#FEDEBE",
