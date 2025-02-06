@@ -1,3 +1,5 @@
+"use client";
+
 import {
     AlertDialog,
     AlertDialogAction,
@@ -23,9 +25,10 @@ export default function BehindTheScene() {
         <div className="flex justify-center bg-green-50 w-4/5 lg:w-1/4">
         <AlertDialog>
         <AlertDialogTrigger>
-            <Button>
-                View
-            </Button>
+        <div className="bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600">
+            View
+        </div>
+
         </AlertDialogTrigger>
         <AlertDialogContent>
             <AlertDialogHeader>
