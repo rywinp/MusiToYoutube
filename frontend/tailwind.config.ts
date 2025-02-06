@@ -9,7 +9,12 @@ export default {
   ],
   theme: {
   	extend: {
+		textShadow: {
+			'black-border': '0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black',
+		  },
   		colors: {
+			"customOrange": "#FF8303",
+			"customOrangeLight": "#FEDEBE",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -58,5 +63,8 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate"),
+	require('tailwindcss-textshadow')
+],
 } satisfies Config;

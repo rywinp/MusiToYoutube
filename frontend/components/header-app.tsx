@@ -1,4 +1,4 @@
-import { Castoro } from "@next/font/google"
+import { Castoro } from "next/font/google"
 
 const castoro = Castoro({
     subsets: ['latin'],
@@ -7,8 +7,8 @@ const castoro = Castoro({
 
 export default function Header() {
     return (
-        <div className={`flex justify-center`}>
-            <h1>Musi To YouTube Service</h1>
+        <div className={`flex justify-center ${castoro.className}`}>
+            <h1 className="text-4xl lg:text-7xl text-center m-7 text-customOrange text-shadow-black-border">Musi To YouTube Service</h1>
         </div>
     );
 }
