@@ -10,10 +10,8 @@ export default function Home() {
   <Header/>
   <InputWithButton description={"Musi Playlist URL"}/>
 
-  <section className="flex flex-col lg:flex-row w-full my-20 px-9 items-center lg:justify-between ">
+  <section className="flex w-full my-16 px-9 justify-center">
     <BehindTheScene/>
-    <h1>Part 2</h1>
-    <h1>Part 3</h1>
   </section>
   
   <Footer/>
