@@ -17,6 +17,10 @@ export default {
   		colors: {
 			"customOrange": "#FF8303",
 			"customOrangeLight": "#FEDEBE",
+			orange: {
+				15: '#FFFBF5',
+				25: '#FFF7ED'
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

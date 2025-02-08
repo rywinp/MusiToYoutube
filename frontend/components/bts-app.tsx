@@ -1,5 +1,8 @@
 "use client";
 
+
+import { ArrowRight } from "lucide-react";
+
 import {
     AlertDialog,
     AlertDialogAction,
@@ -42,16 +45,42 @@ export default function BehindTheScene() {
         </div>
 
         </AlertDialogTrigger>
-        <AlertDialogContent>
+        <AlertDialogContent className="bg-orange-15 border-4 border-black">
             <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+            <AlertDialogTitle>
+                <span className="text-2xl">System Design</span>
+            </AlertDialogTitle>
             <AlertDialogDescription>
-                This action cannot be undone. This will permanently delete your account
-                and remove your data from our servers.
+                <div className="flex justify-between items-center">
+                    <div className="w-1/4 flex flex-col items-center">
+                        <Image src={"/musi.png"} alt={"Google Icon"} width={125} height={125} className="mt-12 mb-4"/>
+                        <span className="mt-1">{`Parse the user's Musi playlist to gather the Youtube
+                    URL link for each music video.`}</span>
+                    </div>  
+
+                    <ArrowRight className="text-black scale-150"/>
+
+                    <div className="w-1/4 flex flex-col items-center">
+                        <Image src={"/google.png"} alt={"Google Icon"} width={600} height={100} className="mt-14 mb-4"/>
+                        <span className="mt-4">{`Request authorization to user's YouTube account using 
+                    Google's OAuth 2.0.`}</span>
+                    </div>  
+
+
+                    <ArrowRight className="text-black scale-150"/>
+
+                    <div className="w-1/4 flex flex-col items-center -my-9">
+                        <Image src={"/youtube.webp"} alt={"YouTube Icon"} width={1000} height={1000} className="mb-2"/>
+                        <span className="-mt-16">{`Create a new YouTube playlist & insert the
+                    parsed music video(s) into the user's account.`}</span>
+                    </div>  
+                </div>
             </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-            <AlertDialogCancel>Close</AlertDialogCancel>
+            <AlertDialogCancel>
+                Close
+            </AlertDialogCancel>
             </AlertDialogFooter>
         </AlertDialogContent>
         </AlertDialog>
