@@ -37,12 +37,6 @@ def main():
 
     print(f"Total Videos to add {len(videos)}")
 
-    exit(0)
-
-    # Do this to continue from yesterday
-    for i in range(180):
-        videos.pop(0)
-
     # Get credentials from user
     credentials = get_credentials()
 
