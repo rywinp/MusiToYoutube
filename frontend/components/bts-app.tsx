@@ -50,8 +50,8 @@ export default function BehindTheScene() {
             <AlertDialogTitle>
                 <span className="text-2xl">System Design</span>
             </AlertDialogTitle>
-            <AlertDialogDescription>
-                <div className="flex justify-between items-center">
+
+            <div className="flex justify-between items-center">
                     <div className="w-1/4 flex flex-col items-center">
                         <Image src={"/musi.png"} alt={"Google Icon"} width={125} height={125} className="mt-12 mb-4"/>
                         <span className="mt-1">{`Parse the user's Musi playlist to gather the Youtube
@@ -60,21 +60,23 @@ export default function BehindTheScene() {
 
                     <ArrowRight className="text-black scale-150"/>
 
-                    <div className="w-1/4 flex flex-col items-center">
-                        <Image src={"/google.png"} alt={"Google Icon"} width={600} height={100} className="mt-14 mb-4"/>
-                        <span className="mt-4">{`Request authorization to user's YouTube account using 
+                    <div className="w-1/4 flex flex-col items-center mx-20">
+                        <Image src={"/google.png"} alt={"Google Icon"} width={625} height={125} className="mt-20 scale-125"/>
+                        <span className="mt-6">{`Request authorization to user's YouTube account using 
                     Google's OAuth 2.0.`}</span>
                     </div>  
 
 
                     <ArrowRight className="text-black scale-150"/>
 
-                    <div className="w-1/4 flex flex-col items-center -my-9">
-                        <Image src={"/youtube.webp"} alt={"YouTube Icon"} width={1000} height={1000} className="mb-2"/>
-                        <span className="-mt-16">{`Create a new YouTube playlist & insert the
+                    <div className="w-1/4 flex flex-col items-center mt-4">
+                        <Image src={"/youtube.webp"} alt={"YouTube Icon"} width={150} height={125} className="mt-14 mb-4"/>
+                        <span className="">{`Create a new YouTube playlist & insert the
                     parsed music video(s) into the user's account.`}</span>
                     </div>  
                 </div>
+                
+            <AlertDialogDescription>
             </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
